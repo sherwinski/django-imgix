@@ -1,5 +1,6 @@
 <!-- ix-docs-ignore -->
 ![imgix logo](https://assets.imgix.net/sdk-imgix-logo.svg)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fimgix%2Fdjango-imgix.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fimgix%2Fdjango-imgix?ref=badge_shield)
 
 `django-imgix` is an app for integrating [imgix](https://www.imgix.com/) into Django sites.
 
@@ -160,3 +161,7 @@ Then, in your template, either simply provide the alias name as the first unname
 ```
 
 Providing an alias means that any other arguments will be ignored.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fimgix%2Fdjango-imgix.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fimgix%2Fdjango-imgix?ref=badge_large)
