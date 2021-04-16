@@ -7,7 +7,7 @@ except ImportError:
     # Python 3 location
     from urllib.parse import urlparse
 
-from django.utils import six
+import six
 from django.template import TemplateSyntaxError
 from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
@@ -151,9 +151,6 @@ def get_imgix(image_url, alias=None, wh=None, **kwargs):
     if shard_strategy:
         args['shard_strategy'] = shard_strategy
 
-    # Imgix by default appends ?ixlib=python-<version_number> to the end
-    # of the URL, but we don't want that.
-    args['sign_with_library_version'] = False
 
     # Get builder instance
     builder = imgix.UrlBuilder(
